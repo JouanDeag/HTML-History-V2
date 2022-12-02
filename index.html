@@ -7,22 +7,26 @@
     <title>HTML History</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="logo_link" href="https://w3schools.com/" target="_blank"
-          ><img src="/logo.svg" alt="logo" class="logo" />
-        </a>
-        <h1 class="page_title grid_child">HTML History</h1>
-        <a class="nav_link grid_child" href="/">Home</a>
-        <a href="#timeline" class="nav_link grid_child">Timeline</a>
-      </nav>
-    </header>
-    <main>
-      <img class="img_100" src="/history-of-html.png" alt="history-of-html" />
-      <div class="direction_indicator">
-        <img src="/arrow.svg" alt="arrow" />
-      </div>
-    </main>
-    <script type="module" src="/src/main.ts"></script>
+    <div id="app">
+      <header>
+        <nav>
+          <a class="logo_link" href="https://w3schools.com/" target="_blank"
+            ><img src="/logo.svg" alt="logo" class="logo" />
+          </a>
+          <h1 class="page_title grid_child">HTML History</h1>
+          <a class="nav_link grid_child" href="/">Home</a>
+          <a href="#timeline" class="nav_link grid_child">Timeline</a>
+        </nav>
+      </header>
+      <main>
+        <img class="img_100" src="/history-of-html.png" alt="history-of-html" />
+        <div class="direction_indicator">
+          <a href="#">
+            <img src="/arrow.svg" alt="arrow" />
+          </a>
+        </div>
+      </main>
+    </div>
+    <script defer type="module" src="/src/main.ts"></script>
   </body>
 </html>
