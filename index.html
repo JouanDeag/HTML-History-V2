@@ -14,7 +14,7 @@
             ><img src="/logo.svg" alt="logo" class="logo" />
           </a>
           <h1 class="page_title grid_child">HTML History</h1>
-          <a class="nav_link grid_child" href="/">Home</a>
+          <a class="nav_link grid_child" href="#dom">DOM</a>
           <a href="#timeline" class="nav_link grid_child">Timeline</a>
         </nav>
       </header>
@@ -28,6 +28,12 @@
             HTML 3.0, gjorde sedan plats för en mer praktisk metod känd som HTML
             3.2, som slutfördes 1997. HTML4 följde snabbt senare samma år.
           </p>
+          <div class="text-image">
+            <img
+              src="/netscape.webp"
+              alt="Early website, Netscape"
+              data-index="1" />
+          </div>
           <p data-index="2" class="text-area">
             Året därpå beslutade W3C-medlemskapet att sluta utveckla HTML och
             istället börja arbeta på en XML-baserad motsvarighet, kallad XHTML.
@@ -39,6 +45,9 @@
             arbetade W3C också på ett nytt språk som inte var kompatibelt med de
             tidigare HTML- och XHTML-språken, kallar det XHTML2.
           </p>
+          <div class="text-image">
+            <img src="/xhtml.png" alt="Example XHTML 1.0 code" data-index="2" />
+          </div>
           <p data-index="3" class="text-area">
             Runt den tid då HTMLs utveckling stoppades 1998 specificerades delar
             av API:et för HTML utvecklat av webbläsarleverantörer och
@@ -48,6 +57,12 @@
             3-specifikationer publicerade 2004 men arbetsgruppen stängdes innan
             alla nivå 3-utkast var färdiga.
           </p>
+          <div class="text-image">
+            <img
+              src="/dom-2.gif"
+              alt="Document object model tree"
+              data-index="3" />
+          </div>
           <p data-index="4" class="text-area">
             2003 väckte publiceringen av XForms, en teknik som var positionerad
             som nästa generation av webbformulär, ett förnyat intresse för att
@@ -57,6 +72,9 @@
             snarare än som en ersättning för befintliga distribuerade tekniker
             (som HTML).
           </p>
+          <div class="text-image">
+            <img src="/rss.png" alt="Showing the RSS logo" data-index="4" />
+          </div>
           <p data-index="5" class="text-area">
             Ett “proof of concept” för att visa att det var möjligt att utöka
             HTML4s formulär för att tillhandahålla många av de funktioner som
@@ -67,6 +85,12 @@
             tillgängligt och input redan begärdes från alla källor, var
             specifikationen endast under Opera Softwares upphovsrätt.
           </p>
+          <div class="text-image">
+            <img
+              src="/xforms.jpg"
+              alt="Example of XForms enabling more advanced forms and online shopping"
+              data-index="6" />
+          </div>
           <p data-index="6" class="text-area">
             Idén att HTMLs utveckling skulle återupptas testades vid en
             W3C-workshop 2004, där några av principerna som ligger till grund
@@ -78,6 +102,13 @@
             röstade för att fortsätta utveckla XML-baserade ersättningar
             istället.
           </p>
+
+          <div class="text-image">
+            <img
+              src="/xml-html.jpg"
+              alt="Demonstrating XML code"
+              data-index="6" />
+          </div>
           <p data-index="7" class="text-area">
             Kort därefter tillkännagav Apple, Mozilla och Opera tillsammans sin
             avsikt att fortsätta arbeta med insatsen under paraplyet av en ny
@@ -86,6 +117,12 @@
             för att ägas gemensamt av alla tre leverantörerna och för att
             tillåta återanvändning av specifikationen.
           </p>
+          <div class="text-image">
+            <img
+              src="/whatwg.jpg"
+              alt="Showing WHATWG and the members of the group"
+              data-index="7" />
+          </div>
           <p data-index="8" class="text-area">
             WHATWG baserades på flera kärnprinciper, särskilt att tekniker måste
             vara bakåtkompatibla, att specifikationer och implementeringar måste
@@ -94,6 +131,12 @@
             tillräckligt detaljerade för att implementeringar kan uppnås.
             fullständig driftskompatibilitet utan att omvända varandra.
           </p>
+          <div class="text-image">
+            <img
+              src="/backwards.jpg"
+              alt="Showing a code tag which refers to a previous version of HTML"
+              data-index="8" />
+          </div>
           <p data-index="9" class="text-area">
             Särskilt det senare kravet krävde att omfattningen av
             HTML5-specifikationen inkluderar vad som tidigare hade specificerats
@@ -101,6 +144,9 @@
             också att inkludera betydligt fler detaljer än vad som tidigare
             ansetts vara normen.
           </p>
+          <div class="text-image">
+            <img src="/thinking.jpg" alt="Man thinking" data-index="9" />
+          </div>
           <p data-index="10" class="text-area">
             2006 indikerade W3C ett intresse av att trots allt delta i
             utvecklingen av HTML5, och 2007 bildade W3C en arbetsgrupp för att
@@ -109,6 +155,12 @@
             W3C-upphovsrätten, samtidigt som de behöll en version med den mindre
             restriktiva licensen på WHATWG-webbplatsen.
           </p>
+          <div class="text-image">
+            <img
+              src="/html5-serializations.png"
+              alt="Differences between HTML5 and XHTML5"
+              data-index="10" />
+          </div>
           <p data-index="11" class="text-area">
             Under ett antal år arbetade sedan båda grupperna tillsammans. 2011
             kom dock grupperna till slutsatsen att de hade olika mål: W3C ville
@@ -118,10 +170,18 @@
             tillstånd med kända problem och lägga till nya funktioner efter
             behov för att utveckla plattformen.
           </p>
+          <div class="text-image">
+            <img src="/html5.png" alt="HTML5 Logo" data-index="11" />
+          </div>
         </section>
-        <section class="dom_explainer"></section>
-        <div class="direction_indicator">
-          <a href="#">
+        <section id="timeline" class="timeline">
+          <img src="/timeline.jpg" alt="HTML Timeline" />
+        </section>
+        <section class="dom_explainer" id="dom">
+          <h1>What is DOM?</h1>
+        </section>
+        <div class="direction_indicator" aria-hidden="true">
+          <a href="#app">
             <img src="/arrow.svg" alt="arrow" />
           </a>
         </div>
