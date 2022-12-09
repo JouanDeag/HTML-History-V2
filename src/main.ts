@@ -8,9 +8,12 @@ const getDistanceToTop = () => {
 // Scroll listener
 document.addEventListener('scroll', () => {
   const distance = getDistanceToTop();
+  const indicator = document.querySelector('.direction_indicator')!;
   if (distance > 200) {
-    document.querySelector('.direction_indicator')!.classList.add('visible');
+    indicator.classList.add('visible');
+    indicator.ariaHidden = 'false';
   } else {
-    document.querySelector('.direction_indicator')!.classList.remove('visible');
+    indicator.classList.remove('visible');
+    indicator.ariaHidden = 'true';
   }
 });
