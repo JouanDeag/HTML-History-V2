@@ -86,6 +86,8 @@ main {
 /* Section styling */
 section {
   margin-top: 10rem;
+  width: 100%;
+  padding: 1rem;
 }
 
 /* Main layout */
@@ -176,6 +178,19 @@ section {
 .visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+/* DOM Animation */
+
+.animation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  min-height: 300px;
+}
+
+.animation > * {
+  height: 100%;
 }
 
 /* Remove scrollbar */
